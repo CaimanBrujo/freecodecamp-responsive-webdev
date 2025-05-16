@@ -16,12 +16,12 @@ body {
    HEADER FIJO CON FLEXBOX
 --------------------------------*/
 #header {
-  display: flex;              /* ✅ uso de flexbox */
+  display: flex;              /* uso de flexbox */
   justify-content: space-between;
   align-items: center;
   background-color: #222;
   padding: 10px 20px;
-  position: fixed;            /* ✅ siempre visible */
+  position: fixed;            /* siempre visible */
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -94,6 +94,23 @@ section {
 #submit:hover {
   background-color: #444;
 }
+
+/* RESPONSIVE VIDEO*/
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+
+
 
 /* ------------------------------
    MEDIA QUERY RESPONSIVA
