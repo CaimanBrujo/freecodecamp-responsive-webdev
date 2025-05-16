@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
+   flex-direction: column;
 }
 
 .topbar {
@@ -28,11 +29,12 @@ body {
    NAVBAR 
 ----------------*/
 #navbar {
-  position: fixed;
+  position: relative;
+  width: 100%;
+  height: auto;
   top: 0;
   left: 0;
-  width: 220px;
-  height: 100vh;
+  
   background-color: #222;
   color: #fff;
   padding: 20px;
@@ -40,12 +42,15 @@ body {
 }
 
 #navbar header {
+  margin-left: 70px;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
+  
 }
 
 .nav-link {
+  margin-left: 70px;
   display: block;
   color: white;
   text-decoration: none;
@@ -61,7 +66,7 @@ body {
    MAIN
 -------------------*/
 #main-doc {
-  margin-left: 270px;
+  margin-left: 70px;
   padding: 20px;
   max-width: 800px;
   
@@ -103,7 +108,10 @@ ul {
     height: auto;
   }
 
-  #main-doc {
+  #main-doc,
+  #navbar,
+  #navbar header,
+  .nav-link  {
     margin-left: 0;
   }
 }
