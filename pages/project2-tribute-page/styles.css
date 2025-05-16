@@ -8,6 +8,25 @@ body {
   color: #333;
 }
 
+.topbar {
+  background-color: #1a1a1a; /* gris oscuro */
+  padding: 10px 20px;
+  text-align: left; /* alineado a la izquierda */
+}
+
+.back-button {
+  color: #ff3c00 !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+
 #main {
   padding: 2em;
   max-width: 800px;
