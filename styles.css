@@ -38,20 +38,6 @@ main {
   border: 2px solid #333333;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #444;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #666;
-}
-
 /* FOOTER */
 footer {
   background-color: #111;
