@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Admisión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Formulario de Admición</h1>
+  <p id="description">Llena este formulario y nos pondremos en contacto</p>
+
+  <!-- Formulario de contacto -->
+  <form id="survey-form">
+    <!-- Nombre -->
+    <label for="name" id="name-label">Nombre</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Escribe tu nombre" 
+      required>
+
+    <!-- Email -->
+    <label for="email" id="email-label">Correo Electrónico</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Escribe tu correo electrónico" 
+      required>
+
+    <!-- Edad -->
+    <label for="number" id="number-label">Edad</label>
+    <input 
+      type="number" 
+      id="number" 
+      name="number"
+      max="120"
+      min="13"
+      placeholder="Escribe tu edad"
+      required>
+
+    <!-- Género -->
+    <label for="dropdown" id="dropdown-label">Género</label>
+    <select name="dropdown" id="dropdown">
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>  
+    </select>
+
+    <!-- Preferencia horaria -->
+    <p>¿Prefieres estudiar de día o de noche?</p>
+    <label for="dia">
+      <input type="radio" id="dia" name="preferencia" value="dia" required checked>
+      Día
+    </label>
+    
+    <label for="noche">
+      <input type="radio" id="noche" name="preferencia" value="noche">
+      Noche
+    </label>
+
+    <!-- Comentarios -->
+    <label for="textarea" id="textarea-label">Comentarios</label>
+    <textarea
+      id="textarea"
+      name="textarea"
+      placeholder="Escribe tus comentarios"
+      rows="5"
+      cols="33"
+      required></textarea>
+
+    <!-- Checkbox -->
+    <label>
+  <input type="checkbox" id="terminos" name="condiciones" value="acepto-terminos" required>
+  Acepto los términos y condiciones
+</label>
+
+<label>
+  <input type="checkbox" id="buentipo" name="buentipo" value="acepto-buentipo" required>
+  Acepto ser buen tipo
+</label>
+
+
+    <!-- Botón de enviar -->
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
+</html>
