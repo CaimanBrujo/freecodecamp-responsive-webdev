@@ -7,11 +7,12 @@ body {
 }
 
 /* HEADER */
-header {
-  background-image: url('assets/images/banner-caiman.png');
-  background-size: cover;
-  background-position: center;
-  height: 200px;
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: contain; 
 }
 
 /* MAIN */
